@@ -1,0 +1,79 @@
+@import url("./config.css");
+@import url("./fonts.css");
+
+:root {
+  --primary_color: hsl(47, 88%, 63%);
+  --white_color: hsl(0, 0%, 100%);
+  --grey_color: hsl(0, 0%, 50%);
+  --black_color: hsl(0, 0%, 7%);
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Figtree", sans-serif;
+  background: var(--primary_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+main {
+    background-color: var(--white_color);
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    margin: 1rem;    
+    padding: 1.5rem;
+    border: 1px solid var(--black_color);
+    border-radius: 8px;
+    box-shadow: 10px 10px;
+}
+
+@media only screen and (max-width: 570px)
+{
+    main {
+        max-width: 100%;
+    }
+}
+
+main div {
+    margin: 10px 0px;
+}
+
+.card_img {
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.tags {
+    background-color: var(--primary_color);
+    border-radius: 4px;
+    font-weight: 800;
+    padding: 6px 12px;
+    width: fit-content;
+}
+
+.card_writer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;    
+}
+
+.card_explanation {
+    color: var(--grey_color)
+}
+
+.card_writer {
+    margin-top: 1rem;
+}
+
+.card_writer img {
+    width: 48px;    
+}
+
+.card_writer span {
+    margin: 0px 12px;
+}
